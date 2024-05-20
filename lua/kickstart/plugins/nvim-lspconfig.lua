@@ -194,17 +194,16 @@ return { -- LSP Configuration & Plugins
       cssls = {},
       gopls = {},
       graphql = {},
-      -- tsserver = {},
-      -- denols = {},
+      eslint = {},
       tsserver = {
         root_dir = require('lspconfig.util').root_pattern 'package.json',
-        single_file_support = false,
-        commands = {
-          OrganizeImports = {
-            organize_imports,
-            description = 'Organize Imports',
-          },
-        },
+        -- single_file_support = false,
+        -- commands = {
+        --   OrganizeImports = {
+        --     organize_imports,
+        --     description = 'Organize Imports',
+        --   },
+        -- },
       },
       denols = {
         root_dir = require('lspconfig.util').root_pattern(

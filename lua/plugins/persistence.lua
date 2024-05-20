@@ -4,7 +4,7 @@ return {
   opts = {
     -- add any custom options here
   },
-  config = function()
+  init = function()
     -- Restore the session for the current directory.
     vim.api.nvim_set_keymap(
       'n',

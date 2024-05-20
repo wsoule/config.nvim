@@ -24,7 +24,7 @@ vim.keymap.set(
   'v',
   '<leader>y',
   '"+y',
-  { desc = 'Copy highlighted text into clipboard.' }
+  { desc = '[Y]ank highlighted text into clipboard.' }
 )
 vim.keymap.set(
   'n',
