@@ -29,7 +29,7 @@ External Requirements:
   - If want to write Golang, you will need `go`
   - etc.
 
-> **NOTE**
+> [!NOTE]
 > See [Install Recipes](#Install-Recipes) for additional Windows and Linux specific notes
 > and quick install snippets
 
@@ -213,8 +213,39 @@ sudo pacman -S --noconfirm --needed gcc make git ripgrep fd unzip neovim
 ```
 </details>
 
+## Here are some plugins that I want to add, but have not yet:
+
+    ○ alpha-nvim 
+    ○ bufferline.nvim 
+    ○ catppuccin 
+    ○ centerpad.nvim 
+    ○ cmp-buffer 
+    ○ dressing.nvim 
+    ○ flash.nvim 
+    ○ indent-blankline.nvim 
+    ○ LazyVim 
+    ○ lualine.nvim 
+    ○ mini.ai 
+    ○ mini.bufremove 
+    ○ mini.comment 
+    ○ mini.indentscope 
+    ○ mini.pairs 
+    ○ mini.surround 
+    ○ noice.nvim 
+    ○ nvim-notify 
+    ○ nvim-spectre 
+    ○ nvim-treesitter-textobjects 
+    ○ nvim-ts-autotag 
+    ○ nvim-ts-context-commentstring 
+    ○ symbols-outline.nvim 
+    ○ tokyonight.nvim 
+    ○ trouble.nvim 
+    ○ vim-illuminate 
+    ○ vim-startuptime
+
 ## Original guide by kickstart:
 
+```
 =====================================================================
 ==================== READ THIS BEFORE CONTINUING ====================
 =====================================================================
@@ -297,3 +328,4 @@ I hope you enjoy your Neovim journey,
 - TJ
 
 P.S. You can delete this when you're done too. It's your config now! :)
+```
