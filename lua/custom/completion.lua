@@ -3,9 +3,6 @@ require 'custom.snippets'
 vim.opt.completeopt = { 'menu', 'menuone', 'noselect' }
 vim.opt.shortmess:append 'c'
 
-local lspkind = require 'lspkind'
-lspkind.init {}
-
 -- See `:help cmp`
 local cmp = require 'cmp'
 local luasnip = require 'luasnip'

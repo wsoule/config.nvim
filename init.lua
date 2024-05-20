@@ -1,6 +1,11 @@
-require 'wsoule'
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
+
+-- Set <space> as the leader key
+-- See `:help mapleader`
+--  NOTE: Must happen before plugins are loaded (otherwise wrong leader will be used)
+vim.g.mapleader = ' '
+vim.g.maplocalleader = ' '
 
 -- Highlight when yanking (copying) text
 --  Try it with `yap` in normal mode
@@ -43,7 +48,7 @@ vim.opt.rtp:prepend(lazypath)
 --    :Lazy update
 --
 -- This will take all the plugin files (files inside of custom/plugins/*.lua) and load them into lazy.
-require('lazy').setup({ import = 'plugins' }, {
+require('lazy').setup({ import = 'custom/plugins' }, {
   change_detection = {
     notify = false,
   },
@@ -70,5 +75,6 @@ require('lazy').setup({ import = 'plugins' }, {
   },
 })
 --
+require 'custom'
 -- -- The line beneath this is called `modeline`. See `:help modeline`
 -- -- vim: ts=2 sts=2 sw=2 et
