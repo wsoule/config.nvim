@@ -60,11 +60,6 @@ vim.keymap.set('n', '<C-j>', '<cmd>cprev<CR>zz')
 vim.keymap.set('n', '<leader>k', '<cmd>lnext<CR>zz')
 vim.keymap.set('n', '<leader>j', '<cmd>lprev<CR>zz')
 
-vim.keymap.set(
-  'n',
-  '<leader>S',
-  ':%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gIc<Left><Left><Left><Left>'
-)
 vim.keymap.set('n', '<leader>x', '<cmd>!chmod +c %<CR>', { silent = true })
 
 -- [[ Basic Keymaps ]]
@@ -205,14 +200,10 @@ vim.api.nvim_set_keymap(
 
 vim.keymap.set('n', '<C-w>tt', '<cmd>terminal<cr>', { desc = 'New [t]erminal' })
 
--- Go to next buffer.
-vim.keymap.set('n', '<C-}>', '10j')
-vim.keymap.set('v', '<C-}>', '<Esc>10j')
-vim.keymap.set('i', '<C-}>', '<Esc>10j')
-
--- Go to previous buffer.
-vim.keymap.set('n', '<C-{>', '10j')
-vim.keymap.set('v', '<C-{>', '<Esc>10j')
-vim.keymap.set('i', '<C-{>', '<Esc>10j')
-
 vim.keymap.set('n', '<C-A>', 'ggVG')
+
+-- These mappings control the size of splits (height/width)
+vim.keymap.set('n', '<M-,>', '<c-w>5<')
+vim.keymap.set('n', '<M-.>', '<c-w>5>')
+vim.keymap.set('n', '<M-t>', '<C-W>+')
+vim.keymap.set('n', '<M-s>', '<C-W>-')

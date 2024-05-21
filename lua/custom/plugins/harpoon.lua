@@ -16,7 +16,7 @@ return {
       harpoon.ui:toggle_quick_menu(harpoon:list())
     end, { desc = 'Harpoon [m]enu.', noremap = true })
 
-    vim.keymap.set('n', '<leader>hpr', function()
+    vim.keymap.set('n', '<leader>Hpr', function()
       local fileIndex = vim.fn.input 'Harpoon Index: '
       harpoon:list():replace_at(tonumber(fileIndex))
     end, { noremap = true, desc = '[H]ar[p]oon [r]eplace.' })
