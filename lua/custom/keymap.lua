@@ -144,7 +144,8 @@ vim.keymap.set(
 )
 
 -- Open command with ;
-vim.keymap.set('n', ';', ':', { desc = 'Open command.' })
+-- commenting this out becuase to repeat the 'f' you need to use ';'
+-- vim.keymap.set('n', ';', ':', { desc = 'Open command.' })
 
 -- For keymaps that affect every mode.
 for _, mode in ipairs(modes) do
@@ -200,7 +201,7 @@ vim.api.nvim_set_keymap(
 
 vim.keymap.set('n', '<C-w>tt', '<cmd>terminal<cr>', { desc = 'New [t]erminal' })
 
-vim.keymap.set('n', '<C-A>', 'ggVG')
+vim.keymap.set('n', '<C-S-A>', 'ggVG')
 
 -- These mappings control the size of splits (height/width)
 vim.keymap.set('n', '<M-,>', '<c-w>5<')

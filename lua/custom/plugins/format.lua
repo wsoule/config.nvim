@@ -26,7 +26,13 @@ return { -- Autoformat
     end,
     formatters_by_ft = {
       lua = { 'stylua' },
-      typescript = { { 'eslint_d', 'deno_fmt' } },
+      typescript = { { 'eslint', 'eslint_d', 'deno_fmt' } },
+      css = { 'prettier' },
+      html = { 'prettier' },
+      json = { 'prettier' },
+      yaml = { 'prettier' },
+      markdown = { 'prettier' },
+      graphql = { 'prettier' },
       -- Conform can also run multiple formatters sequentially
       -- python = { "isort", "black" },
       --
