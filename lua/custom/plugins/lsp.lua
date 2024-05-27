@@ -191,11 +191,33 @@ return { -- LSP Configuration & Plugins
 
     local servers = {
       clangd = {},
-      cssls = {},
+      cssls = {
+        settings = {
+          css = {
+            validate = true,
+            lint = {
+              unknownAtRules = 'ignore',
+            },
+          },
+          scss = {
+            validate = true,
+            lint = {
+              unknownAtRules = 'ignore',
+            },
+          },
+          less = {
+            validate = true,
+            lint = {
+              unknownAtRules = 'ignore',
+            },
+          },
+        },
+      },
       gopls = {},
       graphql = {},
       tsserver = {
         root_dir = require('lspconfig.util').root_pattern 'package.json',
+        capabilities = capabilities,
         -- single_file_support = false,
         -- commands = {
         --   OrganizeImports = {
@@ -213,6 +235,7 @@ return { -- LSP Configuration & Plugins
         ),
         unstable = true,
         lint = true,
+        capabilities = capabilities,
       },
       -- pyright = {},
       -- rust_analyzer = {},
