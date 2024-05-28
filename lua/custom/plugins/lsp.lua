@@ -262,6 +262,7 @@ return { -- LSP Configuration & Plugins
           },
         },
       },
+      eslint = {},
     }
 
     -- Ensure the servers and tools above are installed
@@ -280,6 +281,7 @@ return { -- LSP Configuration & Plugins
       'denols',
       'eslint_d',
       'prettier',
+      'prettierd',
       'jsonlint',
       'vale',
     })
